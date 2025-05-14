@@ -148,7 +148,6 @@ import Projects from "./sections/Project";
 // import Contact from "./sections/Contect";
 import Navbar from "./components/Navbar";
 // import './project.html';
-import tour from "./sections/tour";
 
 export default function App() {
     return ( <
