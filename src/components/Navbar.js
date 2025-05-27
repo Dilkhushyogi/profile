@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Navbar() {
-    const links = ["home", "about", "skills", "projects", "Contact"];
+    const links = ["home", "about", "skills", "projects", "contact"];
     return ( <
         nav className = "fixed top-0 w-full bg-white dark:bg-gray-900 shadow-md z-50" >
         <
