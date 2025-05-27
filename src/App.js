@@ -163,7 +163,7 @@ export default function App() {
         <
         Projects / >
         <
-        tour / >
+        contact / >
         <
         /div >
     );
