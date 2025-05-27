@@ -3,7 +3,7 @@ import Home from "./sections/Home";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
 import Projects from "./sections/Project";
-import Contact from "./sections/Contect";
+import Contact from "./sections/contect";
 import Navbar from "./components/Navbar";
 // import './project.html';
 
