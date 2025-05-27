@@ -1,89 +1,54 @@
-import React, { useState } from "react";
+import React from 'react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form Data:", formData);
-    alert("Message sent!"); // Replace with API later
-  };
-
   return (
-    <div style={styles.container}>
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          style={styles.input}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          style={styles.input}
-        />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-          rows="5"
-          style={styles.textarea}
-        ></textarea>
-        <button type="submit" style={styles.button}>Send</button>
-      </form>
-    </div>
-  );
-};
+    <section className="min-h-screen bg-[#0f172a] text-white px-6 py-12 flex flex-col items-center">
+      <h2 className="text-4xl font-bold mb-8 border-b-4 border-cyan-400 pb-2">Contact Me</h2>
+      
+      <form
+        className="w-full max-w-lg bg-[#1e293b] p-8 rounded-2xl shadow-xl"
+        action="https://formspree.io/f/yourFormID" // <-- Replace with your Formspree ID
+        method="POST"
+      >
+        <div className="mb-6">
+          <label className="block text-lg mb-2">Name</label>
+          <input
+            type="text"
+            name="name"
+            required
+            className="w-full px-4 py-2 rounded-lg bg-[#0f172a] border border-cyan-400 text-white focus:outline-none"
+          />
+        </div>
 
-const styles = {
-  container: {
-    maxWidth: "600px",
-    margin: "auto",
-    padding: "20px",
-    background: "#fff",
-    borderRadius: "10px",
-    boxShadow: "0 0 10px gray",
-    marginTop: "40px"
-  },
-  input: {
-    width: "100%",
-    padding: "10px",
-    margin: "10px 0",
-    fontSize: "16px"
-  },
-  textarea: {
-    width: "100%",
-    padding: "10px",
-    margin: "10px 0",
-    fontSize: "16px"
-  },
-  button: {
-    padding: "10px 20px",
-    backgroundColor: "#28a745",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    fontSize: "16px"
-  }
+        <div className="mb-6">
+          <label className="block text-lg mb-2">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            className="w-full px-4 py-2 rounded-lg bg-[#0f172a] border border-cyan-400 text-white focus:outline-none"
+          />
+        </div>
+
+        <div className="mb-6">
+          <label className="block text-lg mb-2">Message</label>
+          <textarea
+            name="message"
+            rows="5"
+            required
+            className="w-full px-4 py-2 rounded-lg bg-[#0f172a] border border-cyan-400 text-white focus:outline-none"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          className="w-full py-3 rounded-lg bg-cyan-500 hover:bg-cyan-600 transition duration-300 font-semibold"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+  );
 };
 
 export default Contact;
