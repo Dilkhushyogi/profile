@@ -7,7 +7,7 @@ export default function Home() {
         <
         h1 className = "text-4xl font-bold mb-4" > Hi, I 'm Dilkhush Yogi</h1> <
         p className = "mb-4" > Final year BCA student & aspiring developer < /p> <
-        a href = "public/Dilkhush%20Yogi%20(1).pdf"
+        a href = "/Dilkhush%20Yogi%20(1).pdf"
         target="_blank"
         rel="noopener noreferrer"
         download
