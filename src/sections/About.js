@@ -12,6 +12,8 @@ export default function About() {
         p className = "mb-1" > Phone: +91 7413992509 < /p> <
         p className = "mb-1" > LinkedIn: < a href = "https://www.linkedin.com/in/dilkhush-yogi-07512a316"
         className = "text-blue-400" > Profile < /a></p >
+        <p className ="mb-1"> Github: <a href ="https://github.com/Dilkhushyogi" className="text-blue-400"> Github</a>
+            </p>
         <
         /section>
     );
