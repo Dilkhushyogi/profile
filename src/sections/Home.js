@@ -8,7 +8,7 @@ export default function Home() {
         h1 className = "text-4xl font-bold mb-4" > Hi, I 'm Dilkhush Yogi</h1> <
         p className = "mb-4" > Hi, I'm Dilkhush Yogi
 Aspiring Software Engineer | Python Developer | n8n Workflow Automation Builder < /p> <
-        a href = "/Dilkhush%20Yogi%20(1).pdf"
+        a href = "/Dilkhush_Yogi_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         download
