@@ -6,7 +6,8 @@ export default function Home() {
         className = "p-8 h-screen flex flex-col justify-center items-center text-center" >
         <
         h1 className = "text-4xl font-bold mb-4" > Hi, I 'm Dilkhush Yogi</h1> <
-        p className = "mb-4" > Final year BCA student & aspiring developer < /p> <
+        p className = "mb-4" > Hi, I'm Dilkhush Yogi
+Aspiring Software Engineer | Python Developer | n8n Workflow Automation Builder < /p> <
         a href = "/Dilkhush%20Yogi%20(1).pdf"
         target="_blank"
         rel="noopener noreferrer"
